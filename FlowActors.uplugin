@@ -1,0 +1,28 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Flow Actors",
+	"Description": "Actor-focused runtime systems for Flow.",
+	"Category": "Gameplay",
+	"CreatedByURL": "https://github.com/MothCocoon/FlowGraph/graphs/contributors",
+	"EnabledByDefault": false,
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules":
+	[
+		{
+			"Name": "FlowActorRuntime",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault"
+		}
+	],
+	"Plugins":
+	[
+		{
+			"Name": "Flow",
+			"Enabled": true
+		}
+	]
+}
