@@ -8,7 +8,7 @@
 
 /** Authored Flow fight reinforcement; project subclasses can add lifecycle policy. */
 UCLASS(EditInlineNew, Blueprintable, DisplayName = "Fight Reinforcement")
-class FLOWACTORRUNTIME_API UFlowNodeAddOn_Reinforcement : public UFlowNodeAddOn_ReinforcementBase
+class FLOWACTORSRUNTIME_API UFlowNodeAddOn_Reinforcement : public UFlowNodeAddOn_ReinforcementBase
 {
 	GENERATED_BODY()
 

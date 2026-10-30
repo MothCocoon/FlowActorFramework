@@ -11,7 +11,7 @@ class AActor;
 
 /** Selects actor classes during a spawning pass; subclasses can prepare and release per-pass selection state. */
 USTRUCT(BlueprintType, meta = (Hidden))
-struct FLOWACTORRUNTIME_API FFlowActorSpawnSelector
+struct FLOWACTORSRUNTIME_API FFlowActorSpawnSelector
 {
 	GENERATED_BODY()
 
@@ -24,7 +24,7 @@ struct FLOWACTORRUNTIME_API FFlowActorSpawnSelector
 
 /** Spawns a fixed number of actors of one softly referenced class. */
 USTRUCT(BlueprintType, DisplayName = "Actor Class")
-struct FLOWACTORRUNTIME_API FFlowActorSpawnSelector_ActorClass : public FFlowActorSpawnSelector
+struct FLOWACTORSRUNTIME_API FFlowActorSpawnSelector_ActorClass : public FFlowActorSpawnSelector
 {
 	GENERATED_BODY()
 

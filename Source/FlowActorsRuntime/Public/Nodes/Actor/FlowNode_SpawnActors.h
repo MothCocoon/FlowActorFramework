@@ -9,7 +9,7 @@
 #include "FlowNode_SpawnActors.generated.h"
 
 // NOTE (gtaylor) The SpawnActors Node (SAN) implementation for FlowGraph plugin is only
-// marginally usable on its own. If you combine it with the AIFlowGraph UAIFlowActorSpawnRecordEQS
+// marginally usable on its own. If you combine it with the AIFlowActors UAIFlowActorSpawnRecordEQS
 // it becomes more interesting.  And for many projects you might want to also make your own
 // subclass of it (or of SANBase) to hook into your project's actor lifetime systems (pooling, etc.)
 //
@@ -27,7 +27,7 @@ class UFlowActorSpawnRecord;
 
 /** Spawns actors selected by a Flow selector using an authored spawn-record template. */
 UCLASS(Blueprintable, DisplayName = "Spawn Actors")
-class FLOWACTORRUNTIME_API UFlowNode_SpawnActors : public UFlowNode_SpawnActorsBase, public IFlowActorSpawnRecordOwner
+class FLOWACTORSRUNTIME_API UFlowNode_SpawnActors : public UFlowNode_SpawnActorsBase, public IFlowActorSpawnRecordOwner
 {
 	GENERATED_BODY()
 

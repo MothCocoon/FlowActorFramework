@@ -9,7 +9,7 @@
 
 /** Spawns each record index at its authored transform, with an actor-owner fallback. */
 UCLASS(BlueprintType, Blueprintable, EditInlineNew, DisplayName = "Spawn at Indexed Transforms")
-class FLOWACTORRUNTIME_API UFlowIndexedTransformActorSpawnRecord : public UFlowDefaultActorSpawnRecord
+class FLOWACTORSRUNTIME_API UFlowIndexedTransformActorSpawnRecord : public UFlowDefaultActorSpawnRecord
 {
 	GENERATED_BODY()
 

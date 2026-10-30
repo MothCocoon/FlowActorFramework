@@ -12,7 +12,7 @@ class UFlowActorSpawnRecord;
 
 /** One GC-visible queued attempt with its configuration generation at submission time. */
 USTRUCT()
-struct FLOWACTORRUNTIME_API FFlowActorSpawnQueueEntry
+struct FLOWACTORSRUNTIME_API FFlowActorSpawnQueueEntry
 {
 	GENERATED_BODY()
 
@@ -43,7 +43,7 @@ public:
 
 /** Queues actor spawn attempts for authoritative worlds and staggers synchronous successes across ticks. */
 UCLASS()
-class FLOWACTORRUNTIME_API UFlowActorSpawningSubsystem : public UTickableWorldSubsystem
+class FLOWACTORSRUNTIME_API UFlowActorSpawningSubsystem : public UTickableWorldSubsystem
 {
 	GENERATED_BODY()
 
@@ -102,13 +102,13 @@ public:
 	// --
 
 #if WITH_SERVER_CODE
-	/** Submit one owner-retained record using FlowGameFrameworkSettings::DefaultActorSpawnQueueMode. */
+	/** Submit one owner-retained record using FlowActorsSettings::DefaultActorSpawnQueueMode. */
 	bool TryEnqueueActorSpawnRecord(UFlowActorSpawnRecord& Record);
 
 	/** Override the FlowSettings mode for this record only; AttemptOnEnqueue may invoke callbacks before returning. */
 	bool TryEnqueueActorSpawnRecord(UFlowActorSpawnRecord& Record, EFlowActorSpawnQueueMode ModeOverride);
 
-	/** Submit a complete owner-retained pass using FlowGameFrameworkSettings::DefaultActorSpawnQueueMode; return records accepted. */
+	/** Submit a complete owner-retained pass using FlowActorsSettings::DefaultActorSpawnQueueMode; return records accepted. */
 	int32 SubmitSpawnPass(const UObject& Owner, TConstArrayView<UFlowActorSpawnRecord*> Records);
 
 	/** Override the FlowSettings mode for this pass only; queue all accepted records before invoking callbacks. */

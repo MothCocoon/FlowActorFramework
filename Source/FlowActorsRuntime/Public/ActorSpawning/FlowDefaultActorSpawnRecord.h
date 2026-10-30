@@ -8,7 +8,7 @@
 
 /** Spawns an ordinary deferred engine actor and owns it until cleanup or external destruction. */
 UCLASS(BlueprintType, Blueprintable, EditInlineNew)
-class FLOWACTORRUNTIME_API UFlowDefaultActorSpawnRecord : public UFlowActorSpawnRecord
+class FLOWACTORSRUNTIME_API UFlowDefaultActorSpawnRecord : public UFlowActorSpawnRecord
 {
 	GENERATED_BODY()
 

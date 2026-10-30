@@ -12,7 +12,7 @@ class IFlowFightActorsReinforcementHost;
 
 /** Shared authored fight reinforcement and timer, round, threshold, and state lifecycle. */
 UCLASS(Abstract, EditInlineNew, Blueprintable, DisplayName = "Fight Reinforcement Base")
-class FLOWACTORRUNTIME_API UFlowNodeAddOn_ReinforcementBase : public UFlowNodeAddOn
+class FLOWACTORSRUNTIME_API UFlowNodeAddOn_ReinforcementBase : public UFlowNodeAddOn
 {
 	GENERATED_BODY()
 

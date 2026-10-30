@@ -9,7 +9,7 @@
 // NOTE (gtaylor) The FightActors Node (FAN) implementation for FlowGraph plugin is not very
 // usable on its own. To get the most out of it, you'd want to make your own version of FAN
 // (inheriting from FANBase) which hooks into your own life/death systems for your game.
-// But we felt having the base parts in FlowGraph (under FlowGameFramework) would be a good
+// But we felt having the base parts in the FlowActorsRuntime module would be a good
 // baseline for others to implement a similar sort of 'spawn and fight some NPCs' sort of
 // node in Flow -- and at least it's an example for how to use more complex Pin & AddOn setups.
 //
@@ -22,7 +22,7 @@
 
 /** Standalone Flow fight using record-owned destruction as its defeat signal. */
 UCLASS(Blueprintable, DisplayName = "Fight Actors")
-class FLOWACTORRUNTIME_API UFlowNode_FightActors : public UFlowNode_FightActorsBase
+class FLOWACTORSRUNTIME_API UFlowNode_FightActors : public UFlowNode_FightActorsBase
 {
 	GENERATED_BODY()
 

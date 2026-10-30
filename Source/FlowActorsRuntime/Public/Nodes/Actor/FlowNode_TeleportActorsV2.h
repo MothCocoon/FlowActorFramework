@@ -46,7 +46,7 @@ namespace EFlowTeleportState_Classifiers
 
 /** Runtime identity and aggregate result for one teleport activation. */
 USTRUCT()
-struct FLOWACTORRUNTIME_API FFlowTeleportActivation
+struct FLOWACTORSRUNTIME_API FFlowTeleportActivation
 {
 	GENERATED_BODY()
 
@@ -84,7 +84,7 @@ struct FLOWACTORRUNTIME_API FFlowTeleportActivation
 
 // Relocate one or more existing actors to explicit destinations.
 UCLASS(BlueprintType, meta = (DisplayName = "Teleport Actors V2", Keywords = "Teleport Actor Relocate Destination Transform"))
-class FLOWACTORRUNTIME_API UFlowNode_TeleportActorsV2 : public UFlowNode
+class FLOWACTORSRUNTIME_API UFlowNode_TeleportActorsV2 : public UFlowNode
 {
 	GENERATED_BODY()
 

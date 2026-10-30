@@ -18,7 +18,7 @@ class UFlowFightActorsCohort : public UInterface
 	GENERATED_BODY()
 };
 
-class FLOWACTORRUNTIME_API IFlowFightActorsCohort
+class FLOWACTORSRUNTIME_API IFlowFightActorsCohort
 {
 	GENERATED_BODY()
 

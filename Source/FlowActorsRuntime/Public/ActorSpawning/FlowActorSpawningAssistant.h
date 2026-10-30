@@ -71,7 +71,7 @@ struct FFlowActorSpawningPassResult
 
 /** Shared pass scheduling and lifecycle callbacks for Flow actor spawning. Derived structs can add project-specific behavior. */
 USTRUCT(BlueprintType, meta = (Hidden))
-struct FLOWACTORRUNTIME_API FFlowActorSpawningAssistant
+struct FLOWACTORSRUNTIME_API FFlowActorSpawningAssistant
 {
 	GENERATED_BODY()
 

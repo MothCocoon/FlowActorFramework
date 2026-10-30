@@ -13,7 +13,7 @@ class UFlowActorSpawnRecord;
 
 /** Shared spawn inputs, assistant callbacks, spawned-actor tracking, and completion outputs for Flow nodes. */
 UCLASS(Abstract, Blueprintable, DisplayName = "Spawn Actors Base")
-class FLOWACTORRUNTIME_API UFlowNode_SpawnActorsBase : public UFlowNode
+class FLOWACTORSRUNTIME_API UFlowNode_SpawnActorsBase : public UFlowNode
 {
 	GENERATED_BODY()
 
