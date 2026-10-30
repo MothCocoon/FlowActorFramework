@@ -13,7 +13,7 @@
 	"Modules":
 	[
 		{
-			"Name": "FlowActorRuntime",
+			"Name": "FlowActorsRuntime",
 			"Type": "Runtime",
 			"LoadingPhase": "PreDefault"
 		}

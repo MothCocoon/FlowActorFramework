@@ -19,7 +19,7 @@ class FLOWACTORRUNTIME_API UFlowNodeAddOn_FightActorsCohortFixedCount
 protected:
 	/** The configured class and count, selected using the same struct family as vanilla SAN. */
 	UPROPERTY(EditAnywhere, Category = Configuration, DisplayName = "What to Spawn", NoClear,
-		meta = (ExcludeBaseStruct, BaseStruct = "/Script/FlowActorRuntime.FlowActorSpawnSelector", DisplayPriority = 2))
+		meta = (ExcludeBaseStruct, BaseStruct = "/Script/FlowActorsRuntime.FlowActorSpawnSelector", DisplayPriority = 2))
 	FInstancedStruct ActorSpawnSelector;
 
 	/** Authored location and acquisition template; defaults to a normal deferred Flow actor. */

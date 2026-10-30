@@ -34,7 +34,7 @@ class FLOWACTORRUNTIME_API UFlowNode_SpawnActors : public UFlowNode_SpawnActorsB
 protected:
 
 	/** Selects actor classes and the number of actors for each spawn pass. */
-	UPROPERTY(EditAnywhere, Category = Configuration, DisplayName = "What to Spawn", NoClear, meta = (ExcludeBaseStruct, BaseStruct = "/Script/FlowActorRuntime.FlowActorSpawnSelector", DisplayPriority = 2))
+	UPROPERTY(EditAnywhere, Category = Configuration, DisplayName = "What to Spawn", NoClear, meta = (ExcludeBaseStruct, BaseStruct = "/Script/FlowActorsRuntime.FlowActorSpawnSelector", DisplayPriority = 2))
 	FInstancedStruct ActorSpawnSelector;
 
 	/** Authored record duplicated for each new actor; concrete record types choose the spawn location and acquisition. */

@@ -1,9 +1,9 @@
 // Copyright https://github.com/MothCocoon/FlowGraph/graphs/contributors
 using UnrealBuildTool;
 
-public class FlowActorRuntime : ModuleRules
+public class FlowActorsRuntime : ModuleRules
 {
-	public FlowActorRuntime(ReadOnlyTargetRules Target) : base(Target)
+	public FlowActorsRuntime(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 

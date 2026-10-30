@@ -123,11 +123,11 @@ protected:
 
 protected:
 	/** Selects how the node resolves actors to teleport. */
-	UPROPERTY(EditAnywhere, Category = "Configuration", NoClear, meta = (ExcludeBaseStruct, BaseStruct = "/Script/FlowActorRuntime.FlowTeleportActorSelector", DisplayName = "What to Teleport?", ToolTip = "Select how the node resolves actors to teleport."))
+	UPROPERTY(EditAnywhere, Category = "Configuration", NoClear, meta = (ExcludeBaseStruct, BaseStruct = "/Script/FlowActorsRuntime.FlowTeleportActorSelector", DisplayName = "What to Teleport?", ToolTip = "Select how the node resolves actors to teleport."))
 	FInstancedStruct ActorSelector;
 
 	/** Selects how the node resolves and assigns teleport destinations. */
-	UPROPERTY(EditAnywhere, Category = "Configuration", NoClear, meta = (ExcludeBaseStruct, BaseStruct = "/Script/FlowActorRuntime.FlowTeleportDestinationSelector", DisplayName = "Where to Teleport?", ToolTip = "Select how the node resolves and assigns destinations."))
+	UPROPERTY(EditAnywhere, Category = "Configuration", NoClear, meta = (ExcludeBaseStruct, BaseStruct = "/Script/FlowActorsRuntime.FlowTeleportDestinationSelector", DisplayName = "Where to Teleport?", ToolTip = "Select how the node resolves and assigns destinations."))
 	FInstancedStruct DestinationSelector;
 
 	/** Current aggregate lifecycle state for this node's teleport activation. */
