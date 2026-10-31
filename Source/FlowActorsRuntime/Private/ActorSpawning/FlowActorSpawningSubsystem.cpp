@@ -7,7 +7,7 @@
 #include "UObject/UObjectGlobals.h"
 
 #include "ActorSpawning/FlowActorSpawnRecord.h"
-#include "FlowGameFrameworkSettings.h"
+#include "FlowActorsSettings.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(FlowActorSpawningSubsystem)
 
@@ -37,7 +37,7 @@ void UFlowActorSpawningSubsystem::Initialize(FSubsystemCollectionBase& Collectio
 {
 	Super::Initialize(Collection);
 
-	const UFlowGameFrameworkSettings* Settings = GetDefault<UFlowGameFrameworkSettings>();
+	const UFlowActorsSettings* Settings = GetDefault<UFlowActorsSettings>();
 	MaxSpawnSuccessesPerTick = FMath::Max(1, Settings->MaxActorSpawnSuccessesPerTick);
 	MaxSpawnAttemptsPerFlush = FMath::Max(1, Settings->MaxActorSpawnAttemptsPerFlush);
 }
@@ -91,7 +91,7 @@ TStatId UFlowActorSpawningSubsystem::GetStatId() const
 #if WITH_SERVER_CODE
 bool UFlowActorSpawningSubsystem::TryEnqueueActorSpawnRecord(UFlowActorSpawnRecord& Record)
 {
-	return TryEnqueueActorSpawnRecord(Record, GetDefault<UFlowGameFrameworkSettings>()->DefaultActorSpawnQueueMode);
+	return TryEnqueueActorSpawnRecord(Record, GetDefault<UFlowActorsSettings>()->DefaultActorSpawnQueueMode);
 }
 
 bool UFlowActorSpawningSubsystem::TryEnqueueActorSpawnRecord(
@@ -113,7 +113,7 @@ bool UFlowActorSpawningSubsystem::TryEnqueueActorSpawnRecord(
 int32 UFlowActorSpawningSubsystem::SubmitSpawnPass(
 	const UObject& Owner, TConstArrayView<UFlowActorSpawnRecord*> Records)
 {
-	return SubmitSpawnPass(Owner, Records, GetDefault<UFlowGameFrameworkSettings>()->DefaultActorSpawnQueueMode);
+	return SubmitSpawnPass(Owner, Records, GetDefault<UFlowActorsSettings>()->DefaultActorSpawnQueueMode);
 }
 
 int32 UFlowActorSpawningSubsystem::SubmitSpawnPass(

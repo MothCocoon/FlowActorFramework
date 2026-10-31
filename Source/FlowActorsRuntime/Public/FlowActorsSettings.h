@@ -4,11 +4,11 @@
 #include "Engine/DeveloperSettings.h"
 #include "Types/FlowActorSpawnQueueMode.h"
 
-#include "FlowGameFrameworkSettings.generated.h"
+#include "FlowActorsSettings.generated.h"
 
-/** Configuration for FlowGameFramework actor spawning. */
-UCLASS(Config = Game, defaultconfig, meta = (DisplayName = "Flow Game Framework"))
-class FLOWACTORSRUNTIME_API UFlowGameFrameworkSettings : public UDeveloperSettings
+/** Settings for actor spawning in Flow Actors. */
+UCLASS(Config = Game, defaultconfig, meta = (DisplayName = "Flow Actors"))
+class FLOWACTORSRUNTIME_API UFlowActorsSettings : public UDeveloperSettings
 {
 	GENERATED_BODY()
 
@@ -26,7 +26,7 @@ public:
 	int32 MaxActorSpawnAttemptsPerFlush = 64;
 
 #if WITH_EDITORONLY_DATA
-	virtual FName GetCategoryName() const override { return FName("Flow Graph"); }
+	virtual FName GetCategoryName() const override { return FName("Flow Actors"); }
 	virtual FText GetSectionText() const override { return INVTEXT("Actor Spawning"); }
 #endif
 };
