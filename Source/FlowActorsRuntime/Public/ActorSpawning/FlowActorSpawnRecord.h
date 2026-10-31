@@ -96,7 +96,7 @@ namespace EFlowActorSpawnRecordState_Classifiers
  * while sharing the configure, queue, callback, and terminal-state lifecycle.
  */
 UCLASS(Abstract, BlueprintType, Blueprintable, EditInlineNew)
-class FLOWACTORRUNTIME_API UFlowActorSpawnRecord : public UObject
+class FLOWACTORSRUNTIME_API UFlowActorSpawnRecord : public UObject
 {
 	GENERATED_BODY()
 

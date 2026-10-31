@@ -213,7 +213,7 @@ enum class EFlowFightReinforcementState : int8
 FLOW_ENUM_RANGE_VALUES(EFlowFightReinforcementState);
 
 /** Aggregate counts from the fight's record-owning cohorts. */
-struct FLOWACTORRUNTIME_API FFlowFightActorCounts
+struct FLOWACTORSRUNTIME_API FFlowFightActorCounts
 {
 	/** Members with an acquired actor that is still alive by their record's policy. */
 	int32 AliveCount = 0;
@@ -235,7 +235,7 @@ struct FLOWACTORRUNTIME_API FFlowFightActorCounts
 
 /** Authorable timing and pass policy for Flow fights. */
 USTRUCT(BlueprintType)
-struct FLOWACTORRUNTIME_API FFlowFightReinforcementParameters
+struct FLOWACTORSRUNTIME_API FFlowFightReinforcementParameters
 {
 	GENERATED_BODY()
 

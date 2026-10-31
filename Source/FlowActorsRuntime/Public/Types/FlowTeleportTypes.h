@@ -90,7 +90,7 @@ FLOW_ENUM_RANGE_VALUES(EFlowTeleportFailureReason);
 namespace FlowTeleport
 {
 	/** Assigns candidate destinations to actors according to the requested policy. */
-	FLOWACTORRUNTIME_API bool AssignDestinations(
+	FLOWACTORSRUNTIME_API bool AssignDestinations(
 		EFlowTeleportDestinationAssignment Assignment,
 		int32 ActorCount,
 		const TArray<FTransform>& Candidates,

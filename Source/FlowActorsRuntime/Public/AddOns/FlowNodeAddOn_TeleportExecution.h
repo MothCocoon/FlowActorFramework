@@ -12,7 +12,7 @@ class UFlowNode_TeleportActorsV2;
 
 /** Optional extension point for replacing or augmenting Teleport Actors execution. */
 UCLASS(Abstract, BlueprintType, EditInlineNew, meta = (DisplayName = "Teleport Execution"))
-class FLOWACTORRUNTIME_API UFlowNodeAddOn_TeleportExecution : public UFlowNodeAddOn, public IFlowTeleportExecutionAddOnInterface
+class FLOWACTORSRUNTIME_API UFlowNodeAddOn_TeleportExecution : public UFlowNodeAddOn, public IFlowTeleportExecutionAddOnInterface
 {
 	GENERATED_BODY()
 

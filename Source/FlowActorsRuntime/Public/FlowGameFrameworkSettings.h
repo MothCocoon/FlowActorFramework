@@ -8,7 +8,7 @@
 
 /** Configuration for FlowGameFramework actor spawning. */
 UCLASS(Config = Game, defaultconfig, meta = (DisplayName = "Flow Game Framework"))
-class FLOWACTORRUNTIME_API UFlowGameFrameworkSettings : public UDeveloperSettings
+class FLOWACTORSRUNTIME_API UFlowGameFrameworkSettings : public UDeveloperSettings
 {
 	GENERATED_BODY()
 

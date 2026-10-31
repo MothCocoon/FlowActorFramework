@@ -12,7 +12,7 @@ class UFlowActorSpawnRecord;
 
 /** One GC-visible queued attempt with its configuration generation at submission time. */
 USTRUCT()
-struct FLOWACTORRUNTIME_API FFlowActorSpawnQueueEntry
+struct FLOWACTORSRUNTIME_API FFlowActorSpawnQueueEntry
 {
 	GENERATED_BODY()
 
@@ -43,7 +43,7 @@ public:
 
 /** Queues actor spawn attempts for authoritative worlds and staggers synchronous successes across ticks. */
 UCLASS()
-class FLOWACTORRUNTIME_API UFlowActorSpawningSubsystem : public UTickableWorldSubsystem
+class FLOWACTORSRUNTIME_API UFlowActorSpawningSubsystem : public UTickableWorldSubsystem
 {
 	GENERATED_BODY()
 

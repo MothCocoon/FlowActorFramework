@@ -22,7 +22,7 @@
 
 /** Standalone Flow fight using record-owned destruction as its defeat signal. */
 UCLASS(Blueprintable, DisplayName = "Fight Actors")
-class FLOWACTORRUNTIME_API UFlowNode_FightActors : public UFlowNode_FightActorsBase
+class FLOWACTORSRUNTIME_API UFlowNode_FightActors : public UFlowNode_FightActorsBase
 {
 	GENERATED_BODY()
 

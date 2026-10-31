@@ -19,7 +19,7 @@ class UFlowTeleportExecutionAddOnInterface : public UInterface
 	GENERATED_BODY()
 };
 
-class FLOWACTORRUNTIME_API IFlowTeleportExecutionAddOnInterface
+class FLOWACTORSRUNTIME_API IFlowTeleportExecutionAddOnInterface
 {
 	GENERATED_BODY()
 

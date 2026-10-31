@@ -14,7 +14,7 @@ class UFlowNodeAddOn_ReinforcementBase;
 
 /** Shared authored fight policy, cohort passes, reinforcement, and completion for Flow and project fights. */
 UCLASS(Abstract, Blueprintable, DisplayName = "Fight Actors Base")
-class FLOWACTORRUNTIME_API UFlowNode_FightActorsBase
+class FLOWACTORSRUNTIME_API UFlowNode_FightActorsBase
 	: public UFlowNode_SpawnActorsBase
 	, public IFlowFightActorsReinforcementHost
 {

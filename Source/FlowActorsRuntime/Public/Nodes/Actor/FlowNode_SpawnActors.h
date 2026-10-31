@@ -27,7 +27,7 @@ class UFlowActorSpawnRecord;
 
 /** Spawns actors selected by a Flow selector using an authored spawn-record template. */
 UCLASS(Blueprintable, DisplayName = "Spawn Actors")
-class FLOWACTORRUNTIME_API UFlowNode_SpawnActors : public UFlowNode_SpawnActorsBase, public IFlowActorSpawnRecordOwner
+class FLOWACTORSRUNTIME_API UFlowNode_SpawnActors : public UFlowNode_SpawnActorsBase, public IFlowActorSpawnRecordOwner
 {
 	GENERATED_BODY()
 

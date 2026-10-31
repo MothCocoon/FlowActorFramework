@@ -10,7 +10,7 @@ class UFlowNode;
 
 /** Common configuration base for teleport selectors. */
 USTRUCT(BlueprintType, meta = (Hidden))
-struct FLOWACTORRUNTIME_API FFlowTeleportConfig
+struct FLOWACTORSRUNTIME_API FFlowTeleportConfig
 {
 	GENERATED_BODY()
 
@@ -19,7 +19,7 @@ struct FLOWACTORRUNTIME_API FFlowTeleportConfig
 
 /** Resolves the actors that a teleport operation should process. */
 USTRUCT(BlueprintType, meta = (Hidden))
-struct FLOWACTORRUNTIME_API FFlowTeleportActorSelector : public FFlowTeleportConfig
+struct FLOWACTORSRUNTIME_API FFlowTeleportActorSelector : public FFlowTeleportConfig
 {
 	GENERATED_BODY()
 
@@ -35,7 +35,7 @@ struct FLOWACTORRUNTIME_API FFlowTeleportActorSelector : public FFlowTeleportCon
 
 /** Resolves actors from the node's Actors object-array data pin. */
 USTRUCT(BlueprintType, DisplayName = "Teleport Actors from Pin")
-struct FLOWACTORRUNTIME_API FFlowTeleportActorSelector_ActorsDataPin : public FFlowTeleportActorSelector
+struct FLOWACTORSRUNTIME_API FFlowTeleportActorSelector_ActorsDataPin : public FFlowTeleportActorSelector
 {
 	GENERATED_BODY()
 
@@ -48,7 +48,7 @@ struct FLOWACTORRUNTIME_API FFlowTeleportActorSelector_ActorsDataPin : public FF
 
 /** Resolves and adjusts the destinations used by a teleport operation. */
 USTRUCT(BlueprintType, meta = (Hidden))
-struct FLOWACTORRUNTIME_API FFlowTeleportDestinationSelector : public FFlowTeleportConfig
+struct FLOWACTORSRUNTIME_API FFlowTeleportDestinationSelector : public FFlowTeleportConfig
 {
 	GENERATED_BODY()
 
@@ -65,7 +65,7 @@ struct FLOWACTORRUNTIME_API FFlowTeleportDestinationSelector : public FFlowTelep
 
 /** Resolves destinations from the node's Destinations transform-array data pin. */
 USTRUCT(BlueprintType, DisplayName = "Teleport Destinations from Pin")
-struct FLOWACTORRUNTIME_API FFlowTeleportDestinationSelector_TransformsDataPin : public FFlowTeleportDestinationSelector
+struct FLOWACTORSRUNTIME_API FFlowTeleportDestinationSelector_TransformsDataPin : public FFlowTeleportDestinationSelector
 {
 	GENERATED_BODY()
 
@@ -79,7 +79,7 @@ struct FLOWACTORRUNTIME_API FFlowTeleportDestinationSelector_TransformsDataPin :
 
 // Intermediate super struct for deriving nav-mesh adjustable teleport destinations
 USTRUCT(BlueprintType, meta = (Hidden))
-struct FLOWACTORRUNTIME_API FFlowTeleportDestinationSelector_Navigation : public FFlowTeleportDestinationSelector
+struct FLOWACTORSRUNTIME_API FFlowTeleportDestinationSelector_Navigation : public FFlowTeleportDestinationSelector
 {
 	GENERATED_BODY()
 

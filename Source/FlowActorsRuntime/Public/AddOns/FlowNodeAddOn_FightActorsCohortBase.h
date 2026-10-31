@@ -12,7 +12,7 @@ class UFlowActorSpawnRecord;
 
 /** Shared record bookkeeping and Flow owner callbacks for vanilla and project cohorts. */
 UCLASS(Abstract, EditInlineNew, Blueprintable, DisplayName = "Fight Actors Cohort Base")
-class FLOWACTORRUNTIME_API UFlowNodeAddOn_FightActorsCohortBase
+class FLOWACTORSRUNTIME_API UFlowNodeAddOn_FightActorsCohortBase
 	: public UFlowNodeAddOn
 	, public IFlowFightActorsCohort
 	, public IFlowActorSpawnRecordOwner

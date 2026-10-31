@@ -14,7 +14,7 @@ class UFlowFightActorsReinforcementHost : public UInterface
 	GENERATED_BODY()
 };
 
-class FLOWACTORRUNTIME_API IFlowFightActorsReinforcementHost
+class FLOWACTORSRUNTIME_API IFlowFightActorsReinforcementHost
 {
 	GENERATED_BODY()
 

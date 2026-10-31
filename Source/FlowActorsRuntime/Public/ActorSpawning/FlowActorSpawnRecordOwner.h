@@ -17,7 +17,7 @@ class UFlowActorSpawnRecordOwner : public UInterface
 };
 
 /** Receives ordered lifecycle callbacks from records whose outer implements this interface. */
-class FLOWACTORRUNTIME_API IFlowActorSpawnRecordOwner
+class FLOWACTORSRUNTIME_API IFlowActorSpawnRecordOwner
 {
 	GENERATED_BODY()
 

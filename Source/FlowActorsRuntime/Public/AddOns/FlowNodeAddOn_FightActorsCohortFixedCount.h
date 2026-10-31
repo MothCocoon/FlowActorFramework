@@ -11,7 +11,7 @@ class UFlowActorSpawnRecord;
 
 /** Fixed-count cohort with a Flow actor-class selector and an instanced location record. */
 UCLASS(EditInlineNew, Blueprintable, DisplayName = "Cohort (Fixed Count)")
-class FLOWACTORRUNTIME_API UFlowNodeAddOn_FightActorsCohortFixedCount
+class FLOWACTORSRUNTIME_API UFlowNodeAddOn_FightActorsCohortFixedCount
 	: public UFlowNodeAddOn_FightActorsCohortBase
 {
 	GENERATED_BODY()
